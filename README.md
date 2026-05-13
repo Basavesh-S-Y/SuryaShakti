@@ -364,8 +364,6 @@ Run → Run 'app'
 
 ## 📸 Screenshots
 
-*(Add screenshots manually)*
-
 Suggested screenshots:
 
 - Splash Screen
