@@ -399,7 +399,7 @@ Suggested screenshots:
 
 GitHub: https://github.com/Basavesh-S-Y  
 Email: *(basavesh47@gmail.com)*  
-LinkedIn: *(https://www.linked.com/basavesh-sy-53662225b)*
+LinkedIn: *(https://www.linked.com/in/basavesh-sy-53662225b)*
 
 ---
 
