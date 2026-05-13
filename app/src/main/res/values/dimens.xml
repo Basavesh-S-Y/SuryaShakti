@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_corner_radius_sm">12dp</dimen>
+    <dimen name="card_corner_radius_lg">20dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+
+    <!-- Screen horizontal margin -->
+    <dimen name="screen_margin">16dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_huge">36sp</dimen>
+    <dimen name="text_xl">24sp</dimen>
+    <dimen name="text_lg">20sp</dimen>
+    <dimen name="text_md">16sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_xs">11sp</dimen>
+
+    <!-- Chart -->
+    <dimen name="donut_chart_height">280dp</dimen>
+    <dimen name="bar_chart_height">220dp</dimen>
+
+    <!-- Bottom nav height -->
+    <dimen name="bottom_nav_height">60dp</dimen>
+
+    <!-- Icons -->
+    <dimen name="icon_sm">24dp</dimen>
+    <dimen name="icon_md">32dp</dimen>
+    <dimen name="icon_lg">48dp</dimen>
+    <dimen name="icon_splash">140dp</dimen>
+</resources>

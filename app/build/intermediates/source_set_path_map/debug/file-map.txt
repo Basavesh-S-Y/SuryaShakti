@@ -1,0 +1,69 @@
+com.suryashakti.solarmonitor.app-pngs-0 C:\MindMatrix\SuryaShakti(Level6)\app\build\generated\res\pngs\debug
+com.suryashakti.solarmonitor.app-res-1 C:\MindMatrix\SuryaShakti(Level6)\app\build\generated\res\processDebugGoogleServices
+com.suryashakti.solarmonitor.app-resValues-2 C:\MindMatrix\SuryaShakti(Level6)\app\build\generated\res\resValues\debug
+com.suryashakti.solarmonitor.app-packageDebugResources-3 C:\MindMatrix\SuryaShakti(Level6)\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.suryashakti.solarmonitor.app-packageDebugResources-4 C:\MindMatrix\SuryaShakti(Level6)\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.suryashakti.solarmonitor.app-merged_res-5 C:\MindMatrix\SuryaShakti(Level6)\app\build\intermediates\merged_res\debug
+com.suryashakti.solarmonitor.app-debug-6 C:\MindMatrix\SuryaShakti(Level6)\app\src\debug\res
+com.suryashakti.solarmonitor.app-main-7 C:\MindMatrix\SuryaShakti(Level6)\app\src\main\res
+com.suryashakti.solarmonitor.app-lifecycle-runtime-ktx-2.7.0-8 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\07df6aa2b7c346c0ea8af8a188bafa58\transformed\lifecycle-runtime-ktx-2.7.0\res
+com.suryashakti.solarmonitor.app-constraintlayout-2.1.4-9 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\0d46b71b2a91e2a7d0a1f79a69555af8\transformed\constraintlayout-2.1.4\res
+com.suryashakti.solarmonitor.app-material-1.11.0-10 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\0e0e770f73d5eadcbef7f98712151ffb\transformed\material-1.11.0\res
+com.suryashakti.solarmonitor.app-lifecycle-runtime-2.7.0-11 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\12f5b6eef7d797839366c6d16dd7ed5d\transformed\lifecycle-runtime-2.7.0\res
+com.suryashakti.solarmonitor.app-navigation-ui-ktx-2.7.6-12 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\158c65a8ff3304f04dbfe38544e5fd38\transformed\navigation-ui-ktx-2.7.6\res
+com.suryashakti.solarmonitor.app-recyclerview-1.3.2-13 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\17d7c2e86b4e2c04ba93d12e7673cc97\transformed\recyclerview-1.3.2\res
+com.suryashakti.solarmonitor.app-lifecycle-viewmodel-savedstate-2.7.0-14 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\1cad86ac6a82a45ca041f0a7a91101ff\transformed\lifecycle-viewmodel-savedstate-2.7.0\res
+com.suryashakti.solarmonitor.app-profileinstaller-1.3.0-15 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\20357a07c7673c3dd25f0783cee7d4e1\transformed\profileinstaller-1.3.0\res
+com.suryashakti.solarmonitor.app-navigation-runtime-2.7.6-16 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\290ec25f66d4f41214cf8570e18e3994\transformed\navigation-runtime-2.7.6\res
+com.suryashakti.solarmonitor.app-appcompat-1.6.1-17 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\2a8c4f6d48787f0976e66cbd5fdc9137\transformed\appcompat-1.6.1\res
+com.suryashakti.solarmonitor.app-annotation-experimental-1.3.0-18 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\31dfdc619e3180fe8c886300ce282fc2\transformed\annotation-experimental-1.3.0\res
+com.suryashakti.solarmonitor.app-cardview-1.0.0-19 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\38074e07b9d10a4fc6911f5b632f9ffa\transformed\cardview-1.0.0\res
+com.suryashakti.solarmonitor.app-navigation-runtime-ktx-2.7.6-20 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\42251fbed7c2ae1a2258278c4645cbe9\transformed\navigation-runtime-ktx-2.7.6\res
+com.suryashakti.solarmonitor.app-window-1.0.0-21 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\47d5418f04a01b9cca23ce5355d0731d\transformed\window-1.0.0\res
+com.suryashakti.solarmonitor.app-play-services-maps-18.2.0-22 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\4b45e775d5f8c1f6ae930ec3b3e2b566\transformed\play-services-maps-18.2.0\res
+com.suryashakti.solarmonitor.app-navigation-ui-2.7.6-23 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\4cfd941b6d03325906e451b956eb5652\transformed\navigation-ui-2.7.6\res
+com.suryashakti.solarmonitor.app-lifecycle-livedata-core-ktx-2.7.0-24 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\4da013982a7fae60ce08565d6914fdfe\transformed\lifecycle-livedata-core-ktx-2.7.0\res
+com.suryashakti.solarmonitor.app-savedstate-1.2.1-25 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\4ef225db334e5d50b8dcc9478815201d\transformed\savedstate-1.2.1\res
+com.suryashakti.solarmonitor.app-browser-1.4.0-26 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\4fd741447911ceb72f4e9785704f93c7\transformed\browser-1.4.0\res
+com.suryashakti.solarmonitor.app-drawerlayout-1.1.1-27 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\55bfd3f150890e72fd11a82d97b9bb21\transformed\drawerlayout-1.1.1\res
+com.suryashakti.solarmonitor.app-play-services-basement-18.2.0-28 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\5b4b62fc5276c555ea0c641f5e061040\transformed\play-services-basement-18.2.0\res
+com.suryashakti.solarmonitor.app-lifecycle-viewmodel-2.7.0-29 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\607d54dbb80b2c8d314cf75240659829\transformed\lifecycle-viewmodel-2.7.0\res
+com.suryashakti.solarmonitor.app-lifecycle-livedata-ktx-2.7.0-30 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\60d5ecfd8485efd718404b6a9ba6e260\transformed\lifecycle-livedata-ktx-2.7.0\res
+com.suryashakti.solarmonitor.app-viewpager2-1.1.0-beta02-31 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\65882d59245dac003ca4db8c6b499191\transformed\viewpager2-1.1.0-beta02\res
+com.suryashakti.solarmonitor.app-navigation-fragment-2.7.6-32 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\6703cc55c8abaeb7cd406d772dd598d0\transformed\navigation-fragment-2.7.6\res
+com.suryashakti.solarmonitor.app-navigation-fragment-ktx-2.7.6-33 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\676ac67ab2ad0a9f590b128963f78657\transformed\navigation-fragment-ktx-2.7.6\res
+com.suryashakti.solarmonitor.app-lifecycle-service-2.7.0-34 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\6b3881fc3dc31fb69043ab5e76ee84eb\transformed\lifecycle-service-2.7.0\res
+com.suryashakti.solarmonitor.app-slidingpanelayout-1.2.0-35 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\6eaa2aec5f589b994f4120d847a8935b\transformed\slidingpanelayout-1.2.0\res
+com.suryashakti.solarmonitor.app-activity-1.8.2-36 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\7007e4c33bc2a5a74c7ce6569a9ed322\transformed\activity-1.8.2\res
+com.suryashakti.solarmonitor.app-navigation-common-2.7.6-37 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\75a04fa55dde95b5d639d76cecd7b129\transformed\navigation-common-2.7.6\res
+com.suryashakti.solarmonitor.app-lifecycle-livedata-2.7.0-38 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\7886b18be765a4d4c007056ab06fd003\transformed\lifecycle-livedata-2.7.0\res
+com.suryashakti.solarmonitor.app-sqlite-framework-2.4.0-39 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\7a4e99657cd0215dda37bc690767c6c8\transformed\sqlite-framework-2.4.0\res
+com.suryashakti.solarmonitor.app-emoji2-1.2.0-40 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\857bfdcd4a6d7386e38e7122ad8b0fdf\transformed\emoji2-1.2.0\res
+com.suryashakti.solarmonitor.app-core-runtime-2.2.0-41 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\88c150a8391c557821280e630501a40e\transformed\core-runtime-2.2.0\res
+com.suryashakti.solarmonitor.app-activity-ktx-1.8.2-42 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\8910b4170cfab7dbd8b0b72370a7fbc8\transformed\activity-ktx-1.8.2\res
+com.suryashakti.solarmonitor.app-ads-adservices-java-1.0.0-beta05-43 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\8f4a6eecbd7ea172e9bd828473a1d209\transformed\ads-adservices-java-1.0.0-beta05\res
+com.suryashakti.solarmonitor.app-play-services-auth-21.0.0-44 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\94491bc423c939038d22b3429dd9244a\transformed\play-services-auth-21.0.0\res
+com.suryashakti.solarmonitor.app-coordinatorlayout-1.1.0-45 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\9b902f015e5adcc0344d64e38e22add9\transformed\coordinatorlayout-1.1.0\res
+com.suryashakti.solarmonitor.app-transition-1.4.1-46 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\9c351bc7d811b5c8837efbe1809e5fe0\transformed\transition-1.4.1\res
+com.suryashakti.solarmonitor.app-firebase-common-20.4.2-47 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\b0d4e4f04ac236e8e9fc70b6cc71820a\transformed\firebase-common-20.4.2\res
+com.suryashakti.solarmonitor.app-sqlite-2.4.0-48 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\b27307ae96f5064b7a49a53f846a192a\transformed\sqlite-2.4.0\res
+com.suryashakti.solarmonitor.app-play-services-base-18.1.0-49 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\b50baa13f2ed99498c3c5d5cc039f63f\transformed\play-services-base-18.1.0\res
+com.suryashakti.solarmonitor.app-fragment-1.6.2-50 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\bdab025dedfee26d8a77384dc58e224e\transformed\fragment-1.6.2\res
+com.suryashakti.solarmonitor.app-lifecycle-viewmodel-ktx-2.7.0-51 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\bded708d0f9c0c1f1c524472f3caf914\transformed\lifecycle-viewmodel-ktx-2.7.0\res
+com.suryashakti.solarmonitor.app-ads-adservices-1.0.0-beta05-52 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\c2760bc80ff3c3b78cc3dbd6364c2d48\transformed\ads-adservices-1.0.0-beta05\res
+com.suryashakti.solarmonitor.app-work-runtime-ktx-2.9.0-53 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\c930d6ce60419d673dd028df0fa1344a\transformed\work-runtime-ktx-2.9.0\res
+com.suryashakti.solarmonitor.app-room-ktx-2.6.1-54 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\ca410079bc11dfa934d5bb9896506216\transformed\room-ktx-2.6.1\res
+com.suryashakti.solarmonitor.app-appcompat-resources-1.6.1-55 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\cb5c38e5776e24577a3e18566720e088\transformed\appcompat-resources-1.6.1\res
+com.suryashakti.solarmonitor.app-room-runtime-2.6.1-56 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\ceb624b0259c3a352f1be46efcda8b24\transformed\room-runtime-2.6.1\res
+com.suryashakti.solarmonitor.app-savedstate-ktx-1.2.1-57 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\d38731a66e00052d7034a0bbaa64cbf5\transformed\savedstate-ktx-1.2.1\res
+com.suryashakti.solarmonitor.app-fragment-ktx-1.6.2-58 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\d5e8d76977c99533107fb556b489d02c\transformed\fragment-ktx-1.6.2\res
+com.suryashakti.solarmonitor.app-navigation-common-ktx-2.7.6-59 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\d8bd90f881215510e753e621810bd5b7\transformed\navigation-common-ktx-2.7.6\res
+com.suryashakti.solarmonitor.app-work-runtime-2.9.0-60 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\dd134975e12fcdffc6b374bb031a3839\transformed\work-runtime-2.9.0\res
+com.suryashakti.solarmonitor.app-customview-poolingcontainer-1.0.0-61 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\e5cbd66943cd339b5b1b477ba9e69089\transformed\customview-poolingcontainer-1.0.0\res
+com.suryashakti.solarmonitor.app-startup-runtime-1.1.1-62 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\e637c8f58677050dfcead40a5b285337\transformed\startup-runtime-1.1.1\res
+com.suryashakti.solarmonitor.app-play-services-measurement-api-21.5.1-63 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\e75f93170d068b3064c845eec02da677\transformed\play-services-measurement-api-21.5.1\res
+com.suryashakti.solarmonitor.app-emoji2-views-helper-1.2.0-64 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\e8a69f8a15e66407f0720ab52f06b2a1\transformed\emoji2-views-helper-1.2.0\res
+com.suryashakti.solarmonitor.app-lifecycle-process-2.7.0-65 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\e9cf10a1e193d8f748f0a2e87daaf222\transformed\lifecycle-process-2.7.0\res
+com.suryashakti.solarmonitor.app-lifecycle-livedata-core-2.7.0-66 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\eaa1af4ffe053dd0a67438d5e6e38d54\transformed\lifecycle-livedata-core-2.7.0\res
+com.suryashakti.solarmonitor.app-core-ktx-1.12.0-67 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\f4970c43f01a6dff493807add3956e43\transformed\core-ktx-1.12.0\res
+com.suryashakti.solarmonitor.app-core-1.12.0-68 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\f98b5f8437856adfbaa269bb5c4536cf\transformed\core-1.12.0\res

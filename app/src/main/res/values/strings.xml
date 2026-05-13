@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">ಸೂರ್ಯ ಶಕ್ತಿ</string>
+    <string name="app_subtitle">Personal Solar Energy Monitor</string>
+
+    <!-- Real Firebase Web Client ID (from suryashakti-bas project) -->
+    <string name="default_web_client_id">669026953188-ne348jm6r8222n54qeq9caifltrh409i.apps.googleusercontent.com</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_log">Log</string>
+    <string name="nav_report">Report</string>
+    <string name="nav_sync">Sync</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Auth -->
+    <string name="login_title">Sign In</string>
+    <string name="register_title">Create Account</string>
+    <string name="forgot_title">Reset Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">CREATE ACCOUNT</string>
+    <string name="btn_google">Continue with Google</string>
+    <string name="btn_forgot">SEND RESET LINK</string>
+    <string name="lbl_email">Email address</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_confirm_password">Confirm Password</string>
+    <string name="lbl_full_name">Full Name</string>
+    <string name="link_forgot">Forgot password?</string>
+    <string name="link_create">CREATE NEW ACCOUNT</string>
+    <string name="link_have_account">Already have an account? Login</string>
+
+    <!-- Panel Location -->
+    <string name="panel_location_title">Set Solar Panel Location</string>
+    <string name="panel_location_subtitle">Search for the location where your solar panels are installed (not your current location)</string>
+    <string name="search_hint">Search city, area, landmark… (Solar panel location)</string>
+    <string name="panel_location_confirm">✅ Use this location</string>
+    <string name="panel_location_reset">Reset Solar Panel Location</string>
+
+    <!-- Status messages -->
+    <string name="status_logging_in">Logging in…</string>
+    <string name="status_registering">Creating your account…</string>
+    <string name="status_sending_reset">Sending reset link…</string>
+    <string name="status_syncing">Syncing to Cloud…</string>
+    <string name="status_success">Done!</string>
+    <string name="status_error">Something went wrong</string>
+
+    <!-- Sync -->
+    <string name="sync_title">Cloud Sync</string>
+    <string name="btn_sync">SYNC NOW</string>
+    <string name="sync_ready">Ready to sync</string>
+    <string name="sync_complete">Sync complete!</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="btn_save_settings">SAVE SETTINGS</string>
+    <string name="btn_sign_out">SIGN OUT</string>
+    <string name="lbl_grid_rate">Grid Rate (₹/kWh)</string>
+    <string name="lbl_export_rate">Export Rate (₹/kWh)</string>
+    <string name="lbl_panel_capacity">Panel Capacity (kW)</string>
+    <string name="lbl_notifications">Peak Sun Notifications</string>
+    <string name="lbl_theme">App Theme</string>
+
+    <!-- Dashboard -->
+    <string name="energy_balance">Energy Balance</string>
+    <string name="independence_score">Independence Score</string>
+    <string name="no_data_yet">No data logged yet</string>
+
+    <!-- Log Entry -->
+    <string name="log_entry_title">Log Energy Data</string>
+    <string name="btn_simulate">🤖 Simulate</string>
+    <string name="btn_save">💾 SAVE LOG ENTRY</string>
+    <string name="recent_entries">Recent Entries  (long-press to delete)</string>
+
+    <!-- Notifications -->
+    <string name="notif_peak_title">⚡ Peak Solar Irradiance!</string>
+    <string name="notif_peak_body">Live irradiance > 500 W/m² — Run appliances now!</string>
+
+    <!-- Prosumer tips -->
+    <string name="tip_1">💡 Run your washing machine between 10 AM–2 PM for free solar power!</string>
+    <string name="tip_2">🔋 Charge EV or batteries during peak sun for maximum savings.</string>
+    <string name="tip_3">🌿 Every kWh from solar = 0.82 kg less CO₂ in Karnataka\'s grid.</string>
+</resources>

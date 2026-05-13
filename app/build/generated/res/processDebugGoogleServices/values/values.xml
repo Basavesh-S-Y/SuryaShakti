@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">669026953188-ne348jm6r8222n54qeq9caifltrh409i.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">669026953188</string>
+    <string name="google_api_key" translatable="false">AIzaSyADG-7iBIrRUFG74A5kil9LwnCIvX1-I1k</string>
+    <string name="google_app_id" translatable="false">1:669026953188:android:0b72c11b8e9a0d8eac49f1</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyADG-7iBIrRUFG74A5kil9LwnCIvX1-I1k</string>
+    <string name="google_storage_bucket" translatable="false">suryashakti-bas.firebasestorage.app</string>
+    <string name="project_id" translatable="false">suryashakti-bas</string>
+</resources>

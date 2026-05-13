@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Root: RelativeLayout — simple, stable, no AAPT2 attribute-merging issues.
+    The glow/rays/sun are layered inside a centred FrameLayout; text + progress
+    sit in a LinearLayout anchored to the bottom.
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A">
+
+    <!-- ── Sun cluster — centred, shifted 30 % upward via top margin ── -->
+    <!--
+        "verticalBias ~0.32" ≈ the centre is 32 % from the top.
+        We achieve this by wrapping in a LinearLayout that adds a top weight.
+    -->
+    <LinearLayout
+        android:id="@+id/sunCluster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Top spacer: 28 % of screen height (approximates bias 0.32) -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="28"/>
+
+        <!-- Glow + rays + sun, all overlaid in a FrameLayout -->
+        <FrameLayout
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center_horizontal">
+
+            <!-- Radial background glow -->
+            <View
+                android:id="@+id/viewGlow"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:background="@drawable/bg_glow_circle"
+                android:layout_gravity="center"/>
+
+            <!-- Sun rays (will be rotated by SplashActivity) -->
+            <ImageView
+                android:id="@+id/ivSunRays"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:src="@drawable/ic_sun_rays"
+                android:layout_gravity="center"
+                android:contentDescription="@null"/>
+
+            <!-- Sun icon (scales in on start) -->
+            <ImageView
+                android:id="@+id/ivSun"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/ic_sun"
+                android:layout_gravity="center"
+                android:contentDescription="@null"/>
+
+        </FrameLayout>
+
+        <!-- App name — ಸೂರ್ಯ ಶಕ್ತಿ -->
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="ಸೂರ್ಯ ಶಕ್ತಿ"
+            android:textSize="44sp"
+            android:textColor="#FFD700"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.05"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Personal Solar Energy Monitor"
+            android:textSize="15sp"
+            android:textColor="#AAAAAA"
+            android:letterSpacing="0.08"/>
+
+        <!-- Bottom spacer absorbs remaining space -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="72"/>
+
+    </LinearLayout>
+
+    <!-- ── Bottom: loading bar + tagline, pinned to the bottom ── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="32dp">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:indeterminate="true"
+            app:indicatorColor="#FFD700"
+            app:trackColor="#333333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powering your green future... ☀️"
+            android:textSize="12sp"
+            android:textColor="#555555"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

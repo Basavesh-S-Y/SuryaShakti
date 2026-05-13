@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "669026953188",
+    "project_id": "suryashakti-bas",
+    "storage_bucket": "suryashakti-bas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669026953188:android:0b72c11b8e9a0d8eac49f1",
+        "android_client_info": {
+          "package_name": "com.suryashakti.solarmonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669026953188-ne348jm6r8222n54qeq9caifltrh409i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADG-7iBIrRUFG74A5kil9LwnCIvX1-I1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669026953188-ne348jm6r8222n54qeq9caifltrh409i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

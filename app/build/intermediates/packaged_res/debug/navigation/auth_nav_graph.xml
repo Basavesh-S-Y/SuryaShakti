@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.suryashakti.solarmonitor.ui.auth.LoginFragment"
+        android:label="Login"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/slide_out_left">
+
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+        <action
+            android:id="@+id/action_login_to_forgot"
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_in"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.suryashakti.solarmonitor.ui.auth.RegisterFragment"
+        android:label="Register"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_right"
+        app:popExitAnim="@anim/slide_out_left"/>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.suryashakti.solarmonitor.ui.auth.ForgotPasswordFragment"
+        android:label="Forgot Password"
+        app:enterAnim="@anim/slide_up"
+        app:exitAnim="@anim/fade_in"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/slide_out_left"/>
+
+</navigation>

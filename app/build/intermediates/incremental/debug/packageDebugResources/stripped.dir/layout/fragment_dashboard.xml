@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <!-- ── APP HEADER ─────────────────────────────────────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_sun"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="ಸೂರ್ಯ ಶಕ್ತಿ"
+                android:textSize="20sp"
+                android:textColor="#FFD700"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/tvWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☀️ Sunny"
+                android:textSize="12sp"
+                android:textColor="#888888"/>
+        </LinearLayout>
+
+        <!-- ── LIVE IRRADIANCE CARD ────────────────────────────────── -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardIrradiance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#0D0D1A"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title + refresh hint -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="☀️ Live Solar Irradiance"
+                        android:textSize="13sp"
+                        android:textColor="#AAAAAA"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to refresh"
+                        android:textSize="10sp"
+                        android:textColor="#444444"/>
+                </LinearLayout>
+
+                <!-- Location name -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📍 "
+                        android:textSize="14sp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvPlaceName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Locating…"
+                            android:textSize="17sp"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+
+                        <TextView
+                            android:id="@+id/tvCoordinates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="10sp"
+                            android:textColor="#444444"
+                            android:fontFamily="monospace"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvFetchAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="10sp"
+                        android:textColor="#444444"/>
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#1AFFD700"
+                    android:layout_marginBottom="10dp"/>
+
+                <!-- W/m² value + status -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvIrradianceValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-- W/m²"
+                            android:textSize="30sp"
+                            android:textColor="#FFD700"
+                            android:fontFamily="sans-serif-bold"/>
+
+                        <TextView
+                            android:id="@+id/tvIrradianceStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Open-Meteo"
+                            android:textSize="13sp"
+                            android:textColor="#AAAAAA"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="end">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day Peak"
+                            android:textSize="10sp"
+                            android:textColor="#555555"/>
+
+                        <TextView
+                            android:id="@+id/tvIrradiancePeak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-- W/m²"
+                            android:textSize="15sp"
+                            android:textColor="#FFB300"
+                            android:fontFamily="sans-serif-bold"/>
+
+                        <TextView
+                            android:id="@+id/tvPeakHourLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--:00"
+                            android:textSize="10sp"
+                            android:textColor="#555555"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Progress bar -->
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progressIrradiance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    app:indicatorColor="#FFD700"
+                    app:trackColor="#1A1A33"
+                    app:trackCornerRadius="4dp"
+                    android:progress="0"
+                    android:max="100"/>
+
+                <!-- Scale labels -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="0"
+                        android:textSize="10sp" android:textColor="#333333"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="500 W/m² trigger"
+                        android:textSize="10sp" android:textColor="#555555"/>
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="1000"
+                        android:textSize="10sp" android:textColor="#333333" android:gravity="end"/>
+                </LinearLayout>
+
+                <!-- Best window -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="⚡ Best window:"
+                        android:textSize="12sp" android:textColor="#666666"/>
+
+                    <TextView
+                        android:id="@+id/tvPeakWindow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--:-- – --:--"
+                        android:textSize="13sp"
+                        android:textColor="#00E676"
+                        android:fontFamily="sans-serif-bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ── PEAK ALERT BANNER ───────────────────────────────────── -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPeakAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="#1A1200"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:gravity="center_vertical">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="⚡" android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/tvPeakMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Peak irradiance detected!"
+                    android:textSize="13sp"
+                    android:textColor="#FFD700"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ── ENERGY BALANCE DONUT + STATS (single card) ─────────── -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDonut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#141414"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Energy Balance"
+                    android:textSize="13sp"
+                    android:textColor="#888888"
+                    android:layout_marginBottom="4dp"/>
+
+                <!-- Donut chart -->
+                <com.suryashakti.solarmonitor.custom.SolarDonutChart
+                    android:id="@+id/donutChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"/>
+
+                <!-- Stats row below donut -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <!-- Generated -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_stat_green"
+                        android:padding="10dp">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="☀️" android:textSize="20sp" android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvGenerated"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00\nkWh Generated"
+                            android:textSize="14sp"
+                            android:textColor="#FFD700"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:lineSpacingMultiplier="1.2"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="8dp" android:layout_height="1dp"/>
+
+                    <!-- Consumed -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_stat_red"
+                        android:padding="10dp">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🏠" android:textSize="20sp" android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tvConsumed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00\nkWh Consumed"
+                            android:textSize="14sp"
+                            android:textColor="#FF5252"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:lineSpacingMultiplier="1.2"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ── NET ENERGY + EXPORT (single card) ──────────────────── -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#141414"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="14dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNetLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Net Energy"
+                        android:textSize="11sp"
+                        android:textColor="#888888"/>
+
+                    <TextView
+                        android:id="@+id/tvNetEnergy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00 kWh"
+                        android:textSize="22sp"
+                        android:textColor="#FFD700"
+                        android:fontFamily="sans-serif-bold"/>
+                </LinearLayout>
+
+                <!-- Export badge -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardExport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#0D2B0D"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:gravity="center">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🔋 EXPORT"
+                            android:textSize="10sp" android:textColor="#00E676"
+                            android:fontFamily="sans-serif-bold"/>
+
+                        <TextView android:id="@+id/tvExportKwh"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="0.00 kWh"
+                            android:textSize="13sp" android:textColor="#00E676"/>
+
+                        <TextView android:id="@+id/tvExportAmount"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="₹0 earned"
+                            android:textSize="10sp" android:textColor="#00A048"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ── TODAY'S SAVINGS (single card) ──────────────────────── -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSavings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#0F1A00"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Grid Saved" android:textSize="10sp" android:textColor="#888888"/>
+                    <TextView android:id="@+id/tvSavedToday"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="₹0.00" android:textSize="20sp"
+                        android:textColor="#FFD700" android:fontFamily="sans-serif-bold"/>
+                </LinearLayout>
+
+                <View android:layout_width="1dp" android:layout_height="36dp" android:background="#333333"/>
+
+                <LinearLayout
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Export Earned" android:textSize="10sp" android:textColor="#888888"/>
+                    <TextView android:id="@+id/tvExportEarned"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="₹0.00" android:textSize="20sp"
+                        android:textColor="#00E676" android:fontFamily="sans-serif-bold"/>
+                </LinearLayout>
+
+                <View android:layout_width="1dp" android:layout_height="36dp" android:background="#333333"/>
+
+                <LinearLayout
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Total" android:textSize="10sp" android:textColor="#888888"/>
+                    <TextView android:id="@+id/tvTotalBenefit"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="₹0.00" android:textSize="20sp"
+                        android:textColor="#FFFFFF" android:fontFamily="sans-serif-bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ── PANEL EFFICIENCY ────────────────────────────────────── -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardEfficiency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#141414"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="6dp">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="⚡ Panel Efficiency"
+                        android:textSize="13sp" android:textColor="#AAAAAA"/>
+
+                    <TextView android:id="@+id/tvEfficiency"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="0%" android:textSize="18sp"
+                        android:textColor="#FFD700" android:fontFamily="sans-serif-bold"/>
+                </LinearLayout>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progressEfficiency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:indicatorColor="#FFD700" app:trackColor="#333333"
+                    app:trackCornerRadius="4dp" android:progress="0"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ── 30-DAY SUMMARY ──────────────────────────────────────── -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMonthly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#141414"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="💰 30d Saved" android:textSize="10sp" android:textColor="#888888"/>
+                    <TextView android:id="@+id/tv30DaySavings"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="₹0" android:textSize="18sp"
+                        android:textColor="#FFD700" android:fontFamily="sans-serif-bold"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🌿 CO₂" android:textSize="10sp" android:textColor="#888888"/>
+                    <TextView android:id="@+id/tv30DayCo2"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="0 kg" android:textSize="18sp"
+                        android:textColor="#00E676" android:fontFamily="sans-serif-bold"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📅 Days" android:textSize="10sp" android:textColor="#888888"/>
+                    <TextView android:id="@+id/tvDaysLogged"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="0" android:textSize="18sp"
+                        android:textColor="#AAAAAA" android:fontFamily="sans-serif-bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

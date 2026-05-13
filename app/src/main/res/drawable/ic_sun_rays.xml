@@ -1,0 +1,45 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- 12 rays evenly spaced around center at 30° intervals -->
+    <!-- Ray 1 - 0° (top) -->
+    <path android:fillColor="#CCFFD700"
+        android:pathData="M100,10 L104,48 L100,16 L96,48 Z"/>
+    <!-- Ray 2 - 30° -->
+    <path android:fillColor="#AAFFD700"
+        android:pathData="M145,18 L128,52 L148,24 L118,50 Z"/>
+    <!-- Ray 3 - 60° -->
+    <path android:fillColor="#CCFFD700"
+        android:pathData="M182,55 L148,68 L176,58 L146,76 Z"/>
+    <!-- Ray 4 - 90° (right) -->
+    <path android:fillColor="#AAFFD700"
+        android:pathData="M190,100 L152,104 L184,100 L152,96 Z"/>
+    <!-- Ray 5 - 120° -->
+    <path android:fillColor="#CCFFD700"
+        android:pathData="M182,145 L148,132 L176,142 L146,124 Z"/>
+    <!-- Ray 6 - 150° -->
+    <path android:fillColor="#AAFFD700"
+        android:pathData="M145,182 L128,148 L148,176 L118,150 Z"/>
+    <!-- Ray 7 - 180° (bottom) -->
+    <path android:fillColor="#CCFFD700"
+        android:pathData="M100,190 L104,152 L100,184 L96,152 Z"/>
+    <!-- Ray 8 - 210° -->
+    <path android:fillColor="#AAFFD700"
+        android:pathData="M55,182 L72,148 L52,176 L82,150 Z"/>
+    <!-- Ray 9 - 240° -->
+    <path android:fillColor="#CCFFD700"
+        android:pathData="M18,145 L52,132 L24,142 L54,124 Z"/>
+    <!-- Ray 10 - 270° (left) -->
+    <path android:fillColor="#AAFFD700"
+        android:pathData="M10,100 L48,104 L16,100 L48,96 Z"/>
+    <!-- Ray 11 - 300° -->
+    <path android:fillColor="#CCFFD700"
+        android:pathData="M18,55 L52,68 L24,58 L54,76 Z"/>
+    <!-- Ray 12 - 330° -->
+    <path android:fillColor="#AAFFD700"
+        android:pathData="M55,18 L72,52 L52,24 L82,50 Z"/>
+
+</vector>

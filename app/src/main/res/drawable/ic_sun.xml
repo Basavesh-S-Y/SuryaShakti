@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <!-- Outer glow ring -->
+    <path
+        android:fillColor="#33FFD700"
+        android:pathData="M48,48m-44,0a44,44 0,1 1,88 0a44,44 0,1 1,-88 0"/>
+
+    <!-- Mid glow ring -->
+    <path
+        android:fillColor="#55FFD700"
+        android:pathData="M48,48m-36,0a36,36 0,1 1,72 0a36,36 0,1 1,-72 0"/>
+
+    <!-- Main sun circle -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M48,48m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0"/>
+
+    <!-- Inner bright center -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.4"
+        android:pathData="M48,48m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0"/>
+
+</vector>

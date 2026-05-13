@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- AnimatedCounterView -->
+    <declare-styleable name="AnimatedCounterView">
+        <attr name="acv_prefix"   format="string"/>
+        <attr name="acv_suffix"   format="string"/>
+        <attr name="acv_textColor" format="color"/>
+        <attr name="acv_textSize"  format="dimension"/>
+        <attr name="acv_bold"      format="boolean"/>
+        <attr name="acv_decimals"  format="integer"/>
+    </declare-styleable>
+
+    <!-- SolarDonutChart -->
+    <declare-styleable name="SolarDonutChart">
+        <attr name="sdc_trackColor"  format="color"/>
+        <attr name="sdc_solarColor"  format="color"/>
+        <attr name="sdc_gridColor"   format="color"/>
+        <attr name="sdc_exportColor" format="color"/>
+        <attr name="sdc_strokeWidth" format="dimension"/>
+    </declare-styleable>
+
+    <!-- EnergyBarChart -->
+    <declare-styleable name="EnergyBarChart">
+        <attr name="ebc_barWidth"     format="dimension"/>
+        <attr name="ebc_genColor"     format="color"/>
+        <attr name="ebc_conColor"     format="color"/>
+        <attr name="ebc_exportColor"  format="color"/>
+    </declare-styleable>
+
+</resources>

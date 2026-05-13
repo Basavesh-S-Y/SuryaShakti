@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.suryashakti.solarmonitor.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/slide_out_left"/>
+
+    <fragment
+        android:id="@+id/logEntryFragment"
+        android:name="com.suryashakti.solarmonitor.ui.log.LogEntryFragment"
+        android:label="Log Entry"
+        app:enterAnim="@anim/slide_up"
+        app:exitAnim="@anim/fade_in"/>
+
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.suryashakti.solarmonitor.ui.report.ReportFragment"
+        android:label="Report"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"/>
+
+    <fragment
+        android:id="@+id/syncFragment"
+        android:name="com.suryashakti.solarmonitor.ui.sync.SyncFragment"
+        android:label="Sync"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"/>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.suryashakti.solarmonitor.ui.settings.SettingsFragment"
+        android:label="Settings"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"/>
+
+</navigation>

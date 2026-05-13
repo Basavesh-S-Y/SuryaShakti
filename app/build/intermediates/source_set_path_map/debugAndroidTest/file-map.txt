@@ -1,0 +1,6 @@
+com.suryashakti.solarmonitor.test.app-androidTest-0 C:\MindMatrix\SuryaShakti(Level6)\app\build\generated\res\resValues\androidTest\debug
+com.suryashakti.solarmonitor.test.app-mergeDebugAndroidTestResources-1 C:\MindMatrix\SuryaShakti(Level6)\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.suryashakti.solarmonitor.test.app-mergeDebugAndroidTestResources-2 C:\MindMatrix\SuryaShakti(Level6)\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.suryashakti.solarmonitor.test.app-merged_res-3 C:\MindMatrix\SuryaShakti(Level6)\app\build\intermediates\merged_res\debugAndroidTest
+com.suryashakti.solarmonitor.test.app-annotation-experimental-1.3.0-4 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\31dfdc619e3180fe8c886300ce282fc2\transformed\annotation-experimental-1.3.0\res
+com.suryashakti.solarmonitor.test.app-core-1.5.0-5 C:\Users\BASAVESH S Y\.gradle\caches\transforms-4\68e00383d3ff919942279daf509fff9c\transformed\core-1.5.0\res
